@@ -1,12 +1,11 @@
 **Crawling Data  dengan Scrapy Framework**
 
 web yang digunakan :
-
-https://www.visitkorea.or.id/article/namsan-seoul-tower
+src = "https://www.visitkorea.or.id/category/informasi-umum/"
 
 Beberapa tools yang digunakan :
 
-- Python 2.7
+- Python 3.6
 
 - Command Prompt
 
@@ -30,7 +29,9 @@ Beberapa tools yang digunakan :
 
   **genspider** merupakan perintah untuk membuat file baru, nama file dapat disesuaikan dengan kebutuhan. **example.com** dapat anda ganti dengan alamat website yang akan di crawling. 
 
-     ***scrapy genspider crawling*** https://www.visitkorea.or.id/article/namsan-seoul-tower
+     ***scrapy genspider crawling*** "https://www.visitkorea.or.id/category/informasi-umum/"
+
+
 
      **crawling** merupakan nama file spider yang dibuat. File akan tersimpan dalam format .py pada direktori.
 
@@ -58,7 +59,7 @@ Beberapa tools yang digunakan :
 
   6. Setelah crawling data selesai, export data hasil ke format CSV atau Excel dengan perintah   
 
-     ***scrapy crawl crawling.py -o disney.csv -t .csv***
+     ***scrapy crawl crawling.py -o visitkorea.csv -t .csv***
 
      atau bisa menambahkan pada code di dalam **setting.py**
 
